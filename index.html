@@ -5,50 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cao Mai - Portfolio</title>
+
+    <style>
+        /* root information */
+        body {
+        font-size: 20px;
+        font-family: Helvetica;
+        color: #333;
+        margin: 0;
+      }
+  
+      h1, h2 {
+        font-size: 1em;
+        margin: 1em;
+      }
+  
+      h3 {
+        font-size: 3em;
+        /* rem is the root em, otherwise em will take the size of the div. top right bottom left 
+   */
+        margin: 1rem 0 1em 0;
+        /* margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem; */
+      }
+  
+      section > section:nth-child(2n) {
+        background-color: antiquewhite;
+      }
+  
+      section > section {
+        padding: 2em;
+      }
+
+      header{
+          color: red;
+      }
+  
+      </style>
+
 </head>
 
 <body>
-    <h1>Cao Mai</h1>
+    <section>
+        <h2>Cao Mai</h2>
 
+        <section>
+            <header>My Links</header>
+            <ul>
+                <li>
+                    <a href="https://www.makeschool.com/portfolio/Cao-Mai">Make School Portfolio</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/Cao-Mai">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://www.https://github.com/caocmai">gitHub</a>
+                </li>
+            </ul>
 
-    <ul>
-        <li>
-            <a href="https://www.makeschool.com/portfolio/Cao-Mai">Make School Portfolio</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/Cao-Mai">Linkedin</a>
-        </li>
-        <li>
-            <a href="https://www.https://github.com/caocmai">gitHub</a>
-        </li>
-    </ul>
+        </section>   
 
-    <header>About Me</header>
-        <main role="main">
-            <p>My coding endeavour began in September 2019 at Make School. I currently can make websites using bootstrap and Django. Currently leanrning more frontend, backend web technology as well as Swift for mobile applications.  </p>
-        </main>
+        <section>
+            <header>About Me</header>
+                <main role="main">
+                    <p>My coding endeavour began in September 2019 at Make School. I currently can make websites using bootstrap and Django. Currently leanrning more frontend, backend web technology as well as Swift for mobile applications.  </p>
+                </main>
+        </section>
 
-    <ul class="skills">
-        <li>
-            Django
-        </li>
-        <li>
-            HTML
-        </li>
-        <li>
-            CSS
-        </li>
-        <li>
-            Bootstrap
-        </li>
-        <li>
-            Python
-        </li>
-        <li>
-            Swift
-        </li>
-    </ul>
+        <section>
+            <header>My Coding Skills</header>
+            <ul class="skills">
+                <li>
+                    Django
+                </li>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    Bootstrap
+                </li>
+                <li>
+                    Python
+                </li>
+                <li>
+                    Swift
+                </li>
+            </ul>
 
+        </section>
+    </section>
 
 </body>
 </html>
