@@ -2,100 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta 
+    name='viewport' 
+    content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />   
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cao Mai - Portfolio</title>
-
-    <style>
-
-        @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');        
-        
-        /* root information */
-        body {
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        color: #333;
-        margin: 0;
-      }
-  
-      h1, h2 {
-        font-size: 1em;
-        margin: 1em;
-      }
-  
-      h3 {
-        font-size: 3em;
-        /* rem is the root em, otherwise em will take the size of the div. top right bottom left 
-   */
-
-      }
-  
-      section > section:nth-child(2n) {
-        background-color: antiquewhite;
-      }
-  
-      section > section {
-        padding: 2.0em;
-      }
-
-      header{
-          color: red;
-      }
-
-      ul.links {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      li a {
-        /* display: block; */
-        color: black;
-        padding: 5px;
-        text-decoration: none;
-        margin: 3em;
-    }
-
-    li a:hover {
-        background-color: red;
-    }
-
-    .links-list {
-        padding: 0.1em;
-    }
-
-    div.picture {
-        width: 250px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: center;
-    }
-
-    div.container {
-        padding: 10px;
-    }
-
-    .picture {
-        justify-content: center;
-    }
-  
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-<body>
-    <section>
-        <h2 style="color: orange; text-align: center;">Cao Mai</h2>
+<body >
+    <section class="wrapper">
+        <h2 style="color: orange; text-align: center; font-size: 2em;">Cao Mai</h2>
 
         <div class="picture">
-            <img src="rock600x400.jpg" alt="Picture" style="width:100%">
+            <img src="mirror_image.jpg" alt="Picture" style="width:100%">
             <div class="container">
-              <!-- <p>Hardanger, Norway</p> -->
+              <p>Student - Make School</p>
             </div>
-          </div>
+        </div>
           
-
+        <!-- Links -->
         <section class="links-list">
             <!-- <header>My Links</header> -->
             <ul class="links">
@@ -111,16 +38,16 @@
             </ul>
 
         </section>   
-
+        <!-- About Me -->
         <section>
             <header>About Me</header>
                 <main id="about">
                     <p>My coding endeavour began in September 2019 at Make School. I currently can make websites using bootstrap and Django. Currently learning more frontend, backend web technology as well as Swift for mobile applications.  </p>
                 </main>
         </section>
-
+        <!-- My Skills -->
         <section>
-            <header>My Coding Skills</header>
+            <header>Coding Skills</header>
             <ul class="skills">
                 <li>
                     Django
@@ -143,28 +70,41 @@
             </ul>
 
         </section>
+        <!-- Contact Me -->
+        <section class="contact-me">
 
-        <section>
-            <header>Contact Me</header>
-            <br>
-            <form class="contact-form" action="#">
-                First Name:
-                <input type="text"><br>
-                Last Name:
-                <input type="text"><br>
-                Email:
-                <input type="email"><br>
-                Phone:
-                <input type="tel"><br>
-                Content:
+            <div class="div1">
+                <header>My Contact Info</header><br>
+                <span>Cao Mai</span><br>
+                <span>Email: caomai@students.makeschool.com</span><br>
+                <span>Phone: 3143590583</span><br>
+                <span>Location: San Francisco, CA</span><br>
+
+            </div>
+            <br><br>
+            <div class="div2">
+                <header>Contact Me</header>
                 <br>
-                <textarea name="message" rows="10" cols="30"></textarea>
-                <br>                
-                <input type="submit" value="Submit"
-            </form>
+                <form class="contact-form" action="#">
+                    Name:
+                    <input type="text"><br>
+                    Email:
+                    <input type="email"><br>
+                    <!-- Phone:
+                    <input type="tel"><br> -->
+                    Content:
+                    <br>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br>                
+                    <input type="submit" value="SEND"
+                </form>
+            </div>
+
+            
+
         </section>
 
-     </section>
+     </sectionclass="wrapper">
 
      <footer>
         <h6 style="color: rgb(126, 120, 110); text-align: center;">Thanks for viewing my profile</h6>

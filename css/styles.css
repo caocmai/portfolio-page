@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');        
+
+        /* root information */
+body {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+h1, h2 {
+  font-size: 1em;
+  margin: 1em;
+}
+
+h3 {
+  font-size: 3em;
+  /* rem is the root em, otherwise em will take the size of the div. top right bottom left 
+*/
+
+}
+
+section > section:nth-child(2n) {
+  background-color: antiquewhite;
+}
+
+section > section {
+  padding: 2.0em;
+}
+
+header{
+    color: red;
+}
+
+ul.links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li a {
+  /* display: block; */
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  margin: 3em;
+}
+
+li a:hover {
+  background-color: rgb(0, 255, 255);
+}
+
+.links-list {
+  padding: 0.1em;
+}
+
+div.picture {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px auto;
+}
+
+div.container {
+  padding: 10px;
+}
+
+.picture {
+  text-align: center;
+}
+
+
+
+
+/* .contact-me{
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(2, 1fr); */
+/* grid-template-rows: 1fr 1fr 1fr 1fr; */
+
+/* 
+The named areas below define where elements with
+those names are placed on the grid. 
+*/
+
+/* grid-template-areas:  "m m m m";
+
+} */
+
+/* .contact-me {
+font-family: Helvetica;
+padding: 1em;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  body {
+    color: rgb(105, 102, 102)
+    }
+
+  ul.links {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .links-list {
+    padding: 0.1em;
+  }
+
+  li a {
+    /* display: block; */
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0.1em;
+  }
+
+  body>section>section {
+    display: grid;
+    margin: 1em;
+    grid-row-gap: .5em;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  .contact-me {
+    display: flex;
+    justify-content: flex-start;
+  
+  }
+  
+  .contact-me>div {
+    padding: 1em;
+  
+  }
+}
+
